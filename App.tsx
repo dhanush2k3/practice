@@ -59,6 +59,7 @@ function App() {
         <stack.Screen name="home" component={HomeScreen} />
         <stack.Screen name="about" component={AboutScreen} />
         <stack.Screen name="login" component={Login} />
+        <stack.Screen name="profile" component={ProfileScreen} />
       </stack.Navigator>
     </NavigationContainer>
   );
