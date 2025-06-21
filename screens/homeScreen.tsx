@@ -4,7 +4,8 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 type RootStackParamList = {
   home: undefined;
   about: undefined;
-  login: undefined; // add your screen names here
+  login: undefined;
+  profile: undefined; // add your screen names here
 };
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList>;
@@ -28,6 +29,12 @@ export default function HomeScreen({ navigation }: Props) {
           onPress={() => navigation.navigate('login')}
         />
       </View>
+      <View style={styles.buttonspace}>
+        <Button
+          title="Go To Profile"
+          onPress={() => navigation.navigate('profile')}
+        />
+      </View>
     </View>
   );
 }
@@ -48,3 +55,4 @@ const styles = StyleSheet.create({
     margin: 20,
   },
 });
+
